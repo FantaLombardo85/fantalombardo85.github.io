@@ -1,47 +1,84 @@
 :root {
   --amaranto: #74121d;
-  --nero: #000000;
-  --bianco: #ffffff;
+  --nero: #000;
+  --bianco: #fff;
+  --grigio-chiaro: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: var(--bianco);
+  background: var(--grigio-chiaro);
   color: var(--nero);
 }
 
-header, footer {
-  background: var(--amaranto);
-  color: var(--bianco);
-  padding: 1rem;
-  text-align: center;
+.container {
+  display: flex;
+  min-height: 100vh;
 }
 
-main {
-  max-width: 900px;
-  margin: 2rem auto;
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: var(--amaranto);
+  color: var(--bianco);
+  padding: 1.5rem;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: var(--bianco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.content {
+  margin-left: 220px;
+  padding: 2rem;
+  flex: 1;
+}
+
+main section {
+  margin-bottom: 3rem;
+  background: var(--bianco);
   padding: 1rem;
-  background: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
 
 h1, h2, h3 {
   color: var(--amaranto);
-}
-
-h2 {
-  border-bottom: 2px solid var(--amaranto);
-  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
-  background: var(--bianco);
+  margin-top: 1rem;
 }
 
 th, td {
@@ -52,28 +89,24 @@ th, td {
 
 th {
   background: #eee;
-  color: var(--amaranto);
-  font-weight: bold;
 }
 
 .team {
-  margin-bottom: 2rem;
-  padding: 0.5rem;
-  border-left: 4px solid var(--amaranto);
-  background: #f3f3f3;
+  margin-top: 1rem;
 }
 
-@media (max-width: 600px) {
-  th, td {
-    font-size: 14px;
-    padding: 6px;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
 
-  h1 {
-    font-size: 22px;
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 
-  h2 {
-    font-size: 18px;
+  .content {
+    margin-left: 0;
   }
 }
