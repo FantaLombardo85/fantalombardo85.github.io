@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantacalcio Community</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Lega Fantacalcio 2025</h1></header>
+  <main>
+    <section id="classifica">
+      <h2>Classifica</h2>
+      <table>…</table>
+    </section>
+    <section id="rose">
+      <h2>Rose</h2>
+      <div class="team">…</div>
+      <!-- 8 sezioni squadre -->
+    </section>
+    <section id="calendario">
+      <h2>Calendario</h2>
+      <table>…</table>
+    </section>
+  </main>
+  <footer><p>Creato da Fanta Community – aggiornato manualmente</p></footer>
+</body>
+</html>
