@@ -1,13 +1,20 @@
+:root {
+  --amaranto: #74121d;
+  --nero: #000000;
+  --bianco: #ffffff;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
+  background: var(--bianco);
+  color: var(--nero);
 }
 
 header, footer {
-  background: #333;
-  color: #fff;
+  background: var(--amaranto);
+  color: var(--bianco);
   padding: 1rem;
   text-align: center;
 }
@@ -16,12 +23,17 @@ main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
-  background: #fff;
+  background: #f8f8f8;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: var(--amaranto);
 }
 
 h2 {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--amaranto);
   padding-bottom: 0.3rem;
 }
 
@@ -29,6 +41,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
+  background: var(--bianco);
 }
 
 th, td {
@@ -38,11 +51,16 @@ th, td {
 }
 
 th {
-  background: #eaeaea;
+  background: #eee;
+  color: var(--amaranto);
+  font-weight: bold;
 }
 
 .team {
   margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-left: 4px solid var(--amaranto);
+  background: #f3f3f3;
 }
 
 @media (max-width: 600px) {
