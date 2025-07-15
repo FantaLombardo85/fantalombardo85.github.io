@@ -5,21 +5,56 @@
   <title>Rose - FantaLombardo</title>
   <style>
     body {
-      background-color: #e6f5e6; /* verde chiaro tipo campo da calcio */
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 20px;
+      background-color: #e6f5e6;
+    }
+
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      background-color: #228B22;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 80px;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     h1 {
       text-align: center;
       color: #003300;
-      margin-bottom: 30px;
+      margin: 40px 0 20px;
     }
 
     table {
       width: 100%;
       border-collapse: separate;
       border-spacing: 20px;
+      padding: 0 20px;
     }
 
     td {
@@ -60,131 +95,42 @@
 </head>
 <body>
 
+  <header>
+    FANTALOMBARDO
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rose.html">Rose</a>
+    <a href="classifica.html">Classifica</a>
+    <a href="regolamento.html">Regolamento</a>
+  </nav>
+
   <h1>Rose delle Squadre</h1>
 
   <table>
     <tr>
-      <!-- Squadra 1: Real Raffaele -->
       <td>
         <div class="team-name">REAL RAFFAELE</div>
         <img src="realraffaele_logo.jpg" alt="Logo Real Raffaele" class="team-logo">
         <div class="section-title">PORTIERI</div>
-        <ul>
-          <li>Nome Portiere 1</li>
-          <li>Nome Portiere 2</li>
-        </ul>
-
+        <ul><li>Nome Portiere 1</li></ul>
         <div class="section-title">DIFENSORI</div>
-        <ul>
-          <li>Nome Difensore 1</li>
-          <li>Nome Difensore 2</li>
-        </ul>
-
+        <ul><li>Nome Difensore 1</li></ul>
         <div class="section-title">CENTROCAMPISTI</div>
-        <ul>
-          <li>Nome Centrocampista 1</li>
-          <li>Nome Centrocampista 2</li>
-        </ul>
-
+        <ul><li>Nome Centrocampista 1</li></ul>
         <div class="section-title">ATTACCANTI</div>
-        <ul>
-          <li>Nome Attaccante 1</li>
-          <li>Nome Attaccante 2</li>
-        </ul>
+        <ul><li>Nome Attaccante 1</li></ul>
       </td>
-
-      <!-- Celle vuote da riempire -->
-      <td>
-        <div class="team-name">SQUADRA 2</div>
-        <img src="logo_squadra2.jpg" alt="Logo Squadra 2" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
-
-      <td>
-        <div class="team-name">SQUADRA 3</div>
-        <img src="logo_squadra3.jpg" alt="Logo Squadra 3" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
-
-      <td>
-        <div class="team-name">SQUADRA 4</div>
-        <img src="logo_squadra4.jpg" alt="Logo Squadra 4" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
+      <td><div class="team-name">SQUADRA 2</div><img src="logo_squadra2.jpg" class="team-logo"></td>
+      <td><div class="team-name">SQUADRA 3</div><img src="logo_squadra3.jpg" class="team-logo"></td>
+      <td><div class="team-name">SQUADRA 4</div><img src="logo_squadra4.jpg" class="team-logo"></td>
     </tr>
     <tr>
-      <td>
-        <div class="team-name">SQUADRA 5</div>
-        <img src="logo_squadra5.jpg" alt="Logo Squadra 5" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
-
-      <td>
-        <div class="team-name">SQUADRA 6</div>
-        <img src="logo_squadra6.jpg" alt="Logo Squadra 6" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
-
-      <td>
-        <div class="team-name">SQUADRA 7</div>
-        <img src="logo_squadra7.jpg" alt="Logo Squadra 7" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
-
-      <td>
-        <div class="team-name">SQUADRA 8</div>
-        <img src="logo_squadra8.jpg" alt="Logo Squadra 8" class="team-logo">
-        <div class="section-title">PORTIERI</div>
-        <ul></ul>
-        <div class="section-title">DIFENSORI</div>
-        <ul></ul>
-        <div class="section-title">CENTROCAMPISTI</div>
-        <ul></ul>
-        <div class="section-title">ATTACCANTI</div>
-        <ul></ul>
-      </td>
+      <td><div class="team-name">SQUADRA 5</div><img src="logo_squadra5.jpg" class="team-logo"></td>
+      <td><div class="team-name">SQUADRA 6</div><img src="logo_squadra6.jpg" class="team-logo"></td>
+      <td><div class="team-name">SQUADRA 7</div><img src="logo_squadra7.jpg" class="team-logo"></td>
+      <td><div class="team-name">SQUADRA 8</div><img src="logo_squadra8.jpg" class="team-logo"></td>
     </tr>
   </table>
 
