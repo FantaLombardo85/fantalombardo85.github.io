@@ -1,109 +1,121 @@
-<!DOCTYPE html>
-<html lang="it">
+<!DOCTYPE html><html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rose</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Rose - FantaLombardo</title>
   <style>
-    .rosa-table {
-      width: 100%;
-      table-layout: fixed;
-      border-collapse: collapse;
-    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf5e0;
+      margin: 0;
+      padding: 20px;
+    }h1 {
+  text-align: center;
+  color: #800000;
+  margin-bottom: 40px;
+}
 
-    .rosa-table td {
-      vertical-align: top;
-      padding: 1rem;
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
 
-    .squadra {
-      text-align: center;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: #74121d;
-    }
+td {
+  vertical-align: top;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #800000;
+}
 
-    .rosa img {
-      display: block;
-      margin: 0.5rem auto;
-      max-width: 80px;
-    }
+.team-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #800000;
+  margin-bottom: 10px;
+}
 
-    .ruolo {
-      margin-top: 0.8rem;
-      font-weight: bold;
-      color: #000;
-    }
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 80px;
+}
 
-    .giocatore {
-      display: flex;
-      justify-content: space-between;
-      padding: 2px 0;
-    }
+.section-title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
 
-    .valore {
-      color: #444;
-      font-size: 0.9rem;
-      margin-left: 0.5rem;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 2px;
+}
+
+.value {
+  color: #006400;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
   </style>
 </head>
 <body>
-  <header>
-    <h1 class="tricolore">
-      <span>F</span><span>A</span><span>N</span><span>T</span><span>A</span>
-      <span>L</span><span>O</span><span>M</span><span>B</span><span>A</span><span>R</span><span>D</span><span>O</span>
-    </h1>
-  </header>
+  <h1>Rose FantaLombardo</h1>
+  <table>
+    <tr>
+      <td>
+        <div class="team-name">Real Raffaele</div>
+        <img src="logo_realraffaele.png" alt="Logo Real Raffaele" class="logo" /><div class="section-title">PORTIERI</div>
+    <ul>
+      <li>Donnarumma <span class="value">15</span></li>
+      <li>Meret <span class="value">8</span></li>
+    </ul>
 
-  <nav class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="classifica.html">Classifica</a>
-    <a href="calendario.html">Calendario</a>
-    <a href="rose.html" class="active">Rose</a>
-  </nav>
+    <div class="section-title">DIFENSORI</div>
+    <ul>
+      <li>Di Lorenzo <span class="value">12</span></li>
+      <li>Bremer <span class="value">11</span></li>
+      <li>Udogie <span class="value">10</span></li>
+    </ul>
 
-  <main class="content">
-    <h2>Rose delle Squadre</h2>
+    <div class="section-title">CENTROCAMPISTI</div>
+    <ul>
+      <li>Barella <span class="value">14</span></li>
+      <li>Tonali <span class="value">13</span></li>
+      <li>Pellegrini <span class="value">10</span></li>
+    </ul>
 
-    <table class="rosa-table">
-      <tr>
-        <td>
-          <div class="squadra">Real Raffaele</div>
-          <div class="rosa">
-            <img src="logo_realraffaele.png" alt="Logo Real Raffaele" />
-            <div class="ruolo">PORTIERI</div>
-            <div class="giocatore">Vicario <span class="valore">15</span></div>
+    <div class="section-title">ATTACCANTI</div>
+    <ul>
+      <li>Osimhen <span class="value">20</span></li>
+      <li>Chiesa <span class="value">16</span></li>
+    </ul>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
 
-            <div class="ruolo">DIFENSORI</div>
-            <div class="giocatore">Di Lorenzo <span class="valore">18</span></div>
-            <div class="giocatore">Udogie <span class="valore">12</span></div>
-
-            <div class="ruolo">CENTROCAMPISTI</div>
-            <div class="giocatore">Barella <span class="valore">22</span></div>
-            <div class="giocatore">Fagioli <span class="valore">10</span></div>
-
-            <div class="ruolo">ATTACCANTI</div>
-            <div class="giocatore">Immobile <span class="valore">16</span></div>
-            <div class="giocatore">Chiesa <span class="valore">21</span></div>
-          </div>
-        </td>
-        <td>Squadra 2</td>
-        <td>Squadra 3</td>
-        <td>Squadra 4</td>
-      </tr>
-      <tr>
-        <td>Squadra 5</td>
-        <td>Squadra 6</td>
-        <td>Squadra 7</td>
-        <td>Squadra 8</td>
-      </tr>
-    </table>
-  </main>
+  </table>
 </body>
 </html>
