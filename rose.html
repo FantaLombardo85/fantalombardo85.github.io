@@ -2,160 +2,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rose - FantaLombardo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #eaf5e0;
-      margin: 0;
-    }header {
-  background: linear-gradient(to right, green, white, red);
-  color: #000;
-  padding: 15px;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-nav {
-  background-color: #800000;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: #a00000;
-  font-weight: bold;
-}
-
-main {
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  color: #800000;
-  margin-bottom: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 20px;
-}
-
-td {
-  vertical-align: top;
-  background: #fff;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  border: 2px solid #800000;
-}
-
-.team-name {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  color: #800000;
-  margin-bottom: 10px;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 10px;
-  max-width: 80px;
-}
-
-.section-title {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #333;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin: 2px 0;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 2px;
-}
-
-.value {
-  color: #006400;
-  font-weight: bold;
-  margin-left: 10px;
-  font-size: 0.9em;
-}
-
-  </style>
+  <title>Rose - FANTALOMBARDO</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>FANTALOMBARDO</header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="classifica.html">Classifica</a>
-    <a href="calendario.html">Calendario</a>
-    <a href="rose.html" class="active">Rose</a>
-  </nav>
-  <main>
-    <h1>Rose FantaLombardo</h1>
-    <table>
-      <tr>
-        <td>
-          <div class="team-name">Real Raffaele</div>
-          <img src="logo_realraffaele.png" alt="Logo Real Raffaele" class="logo" /><div class="section-title">PORTIERI</div>
-      <ul>
-        <li>Donnarumma <span class="value">15</span></li>
-        <li>Meret <span class="value">8</span></li>
-      </ul>
+  <header>
+    <h1>FANTALOMBARDO</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="rose.html">Rose</a>
+      <a href="classifica.html">Classifica</a>
+      <a href="regolamento.html">Regolamento</a>
+    </nav>
+  </header>  <main>
+    <section class="rose-section">
+      <table class="rose-table">
+        <tr>
+          <td class="squadra">
+            <h2>Real Raffaele</h2>
+            <img src="images/realraffaele-logo.jpg" alt="Logo Real Raffaele" class="logo" />
+            <div class="rosa">
+              <h3>PORTIERI</h3>
+              <ul>
+                <li>Maignan - <span class="valore">30</span></li>
+                <li>Radu I. - <span class="valore">5</span></li>
+                <li>Vasquez D. - <span class="valore">3</span></li>
+              </ul><h3>DIFENSORI</h3>
+          <ul>
+            <li>Delprato - <span class="valore">9</span></li>
+            <li>Hernandez T. - <span class="valore">28</span></li>
+            <li>Kamara H. - <span class="valore">7</span></li>
+            <li>Marusic - <span class="valore">6</span></li>
+            <li>Masina (Torino) - <span class="valore">8</span></li>
+            <li>Ruggeri (Atalanta) - <span class="valore">8</span></li>
+            <li>Spinazzola (Napoli) - <span class="valore">11</span></li>
+            <li>Tchatchoua (Verona) - <span class="valore">8</span></li>
+          </ul>
 
-      <div class="section-title">DIFENSORI</div>
-      <ul>
-        <li>Di Lorenzo <span class="value">12</span></li>
-        <li>Bremer <span class="value">11</span></li>
-        <li>Udogie <span class="value">10</span></li>
-      </ul>
+          <h3>CENTROCAMPISTI</h3>
+          <ul>
+            <li>Brescianini (Atalanta) - <span class="valore">15</span></li>
+            <li>Guendouzi (Lazio) - <span class="valore">11</span></li>
+            <li>Hernani (Parma) - <span class="valore">13</span></li>
+          </ul>
 
-      <div class="section-title">CENTROCAMPISTI</div>
-      <ul>
-        <li>Barella <span class="value">14</span></li>
-        <li>Tonali <span class="value">13</span></li>
-        <li>Pellegrini <span class="value">10</span></li>
-      </ul>
-
-      <div class="section-title">ATTACCANTI</div>
-      <ul>
-        <li>Osimhen <span class="value">20</span></li>
-        <li>Chiesa <span class="value">16</span></li>
-      </ul>
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+          <h3>ATTACCANTI</h3>
+          <ul>
+            <li><!-- In attesa dei dati --></li>
+          </ul>
+        </div>
+      </td>
+      <!-- Spazi per altre 7 squadre -->
+    </tr>
+  </table>
+</section>
 
   </main>
 </body>
