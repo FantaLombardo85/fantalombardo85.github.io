@@ -1,66 +1,113 @@
-<!DOCTYPE html>
-<html lang="it">
+<!DOCTYPE html><html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rose - FANTALOMBARDO</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #1f1f1f;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #f8c100;
+      text-align: center;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 20px;
+      flex-grow: 1;
+      background: #f0f0f0;
+      min-height: 100vh;
+    }
+    .team-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin-bottom: 30px;
+      transform: perspective(800px) rotateX(2deg);
+    }
+    .team-logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    .team-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+    .team-title h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      padding: 4px 0;
+    }
+    .role-title {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>FANTALOMBARDO</h1>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="rose.html">Rose</a>
-      <a href="classifica.html">Classifica</a>
-      <a href="regolamento.html">Regolamento</a>
-    </nav>
-  </header>
+  <div class="sidebar">
+    <h2>FANTALOMBARDO</h2>
+    <div>🏆 Classifica</div>
+    <div>👥 Rose</div>
+    <!-- Aggiungi altri link se servono -->
+  </div>  <div class="main-content">
+    <div class="team-box">
+      <div class="team-title">
+        <img src="realraffaele_logo.png" alt="Logo Real Raffaele" class="team-logo">
+        <h3>Real Raffaele</h3>
+      </div><div class="role-title">PORTIERI</div>
+  <ul>
+    <li>Maignan (Milan) - 14</li>
+    <li>Radu I. (Venezia) - 8</li>
+    <li>Vasquez D. (Empoli) - 10</li>
+  </ul>
 
-  <main>
-    <section class="rose-section">
-      <table class="rose-table">
-        <tr>
-          <td class="squadra">
-            <h2>Real Raffaele</h2>
-            <img src="images/realraffaele-logo.jpg" alt="Logo Real Raffaele" class="logo" />
-            <div class="rosa">
-              <h3>PORTIERI</h3>
-              <ul>
-                <li>Maignan - <span class="valore">30</span></li>
-                <li>Radu I. - <span class="valore">5</span></li>
-                <li>Vasquez D. - <span class="valore">3</span></li>
-              </ul>
+  <div class="role-title">DIFENSORI</div>
+  <ul>
+    <li>Delprato (Parma) - 12</li>
+    <li>Hernandez T. (Milan) - 13</li>
+    <li>Kamara H. (Udinese) - 9</li>
+    <li>Marusic (Lazio) - 11</li>
+    <li>Masina (Torino) - 8</li>
+    <li>Ruggeri (Atalanta) - 8</li>
+    <li>Spinazzola (Napoli) - 11</li>
+    <li>Tchatchoua (Verona) - 8</li>
+  </ul>
 
-              <h3>DIFENSORI</h3>
-              <ul>
-                <li>Delprato - <span class="valore">9</span></li>
-                <li>Hernandez T. - <span class="valore">28</span></li>
-                <li>Kamara H. - <span class="valore">7</span></li>
-                <li>Marusic - <span class="valore">6</span></li>
-                <li>Masina (Torino) - <span class="valore">8</span></li>
-                <li>Ruggeri (Atalanta) - <span class="valore">8</span></li>
-                <li>Spinazzola (Napoli) - <span class="valore">11</span></li>
-                <li>Tchatchoua (Verona) - <span class="valore">8</span></li>
-              </ul>
+  <div class="role-title">CENTROCAMPISTI</div>
+  <ul>
+    <li>Brescianini (Atalanta) - 15</li>
+    <li>Guendouzi (Lazio) - 11</li>
+    <li>Hernani (Parma) - 13</li>
+  </ul>
+</div>
 
-              <h3>CENTROCAMPISTI</h3>
-              <ul>
-                <li>Brescianini (Atalanta) - <span class="valore">15</span></li>
-                <li>Guendouzi (Lazio) - <span class="valore">11</span></li>
-                <li>Hernani (Parma) - <span class="valore">13</span></li>
-              </ul>
-
-              <h3>ATTACCANTI</h3>
-              <ul>
-                <li><!-- In attesa dei dati --></li>
-              </ul>
-            </div>
-          </td>
-          <!-- Spazi per altre 7 squadre -->
-        </tr>
-      </table>
-    </section>
-  </main>
+  </div>
 </body>
 </html>
