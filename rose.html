@@ -1,132 +1,147 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rose | FANTALOMBARDO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rose</title>
+  <link rel="stylesheet" href="styles.css"/>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+    .table-rose {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .team-card {
+      background: #f0f0f0;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+      padding: 15px;
+    }
+
+    .team-card h3 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .team-logo {
+      display: block;
+      margin: 0 auto 10px;
+      max-width: 100px;
+    }
+
+    .team-section {
+      margin-bottom: 10px;
+    }
+
+    .team-section strong {
+      display: block;
+      margin-bottom: 5px;
       color: #333;
     }
 
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100vh;
-      background-color: #1e3a8a;
-      color: white;
-      padding: 20px;
-      box-shadow: 2px 0 10px rgba(0,0,0,0.3);
-    }
-
-    .sidebar h1 {
-      font-size: 20px;
-      text-align: center;
-      margin: 0;
-      margin-bottom: 40px;
-      letter-spacing: 1px;
-    }
-
-    .content {
-      margin-left: 200px;
-      padding: 20px;
-    }
-
-    .rose-table {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 20px;
-      perspective: 1000px;
-    }
-
-    .squadra {
-      background: #ffffff;
-      border-radius: 15px;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-      padding: 15px;
-      transform: rotateX(3deg) rotateY(1deg);
-      transform-style: preserve-3d;
-    }
-
-    .squadra h2 {
-      text-align: center;
-      margin-top: 0;
-      font-size: 18px;
-      color: #1e3a8a;
-    }
-
-    .squadra img {
-      display: block;
-      margin: 0 auto 10px auto;
-      width: 60px;
-      height: 60px;
-    }
-
-    .squadra ul {
+    .team-section ul {
       list-style: none;
-      padding: 0;
+      padding-left: 10px;
     }
 
-    .squadra li {
-      padding: 4px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .squadra li:last-child {
-      border-bottom: none;
-    }
-
-    .ruolo {
-      font-weight: bold;
-      margin-top: 10px;
-      color: #2563eb;
+    .team-section li {
+      margin-bottom: 3px;
     }
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <h1>FANTALOMBARDO</h1>
-  </div>
+  <header>
+    <h1 class="tricolore">
+      <span>F</span><span>A</span><span>N</span><span>T</span><span>A</span>
+      <span>L</span><span>O</span><span>M</span><span>B</span><span>A</span><span>R</span><span>D</span><span>O</span>
+    </h1>
+  </header>
 
-  <div class="content">
-    <div class="rose-table">
-      <div class="squadra">
-        <h2>Real Raffaele</h2>
-        <img src="img/realraffaele-logo.png" alt="Logo Real Raffaele">
-        
-        <div class="ruolo">PORTIERI</div>
-        <ul>
-          <li>Maignan (14) - Milan</li>
-          <li>Radu I. (8) - Venezia</li>
-          <li>Vasquez D. (10) - Empoli</li>
-        </ul>
+  <nav class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="classifica.html">Classifica</a>
+    <a href="calendario.html">Calendario</a>
+    <a href="rose.html" class="active">Rose</a>
+    <a href="supercoppa.html">Supercoppa</a>
+  </nav>
 
-        <div class="ruolo">DIFENSORI</div>
-        <ul>
-          <li>Delprato (12) - Parma</li>
-          <li>Hernandez T. (13) - Milan</li>
-          <li>Kamara H. (9) - Udinese</li>
-          <li>Marusic (11) - Lazio</li>
-          <li>Masina (8) - Torino</li>
-          <li>Ruggeri (8) - Atalanta</li>
-          <li>Spinazzola (11) - Napoli</li>
-          <li>Tchatchoua (8) - Verona</li>
-        </ul>
-
-        <div class="ruolo">CENTROCAMPISTI</div>
-        <ul>
-          <li>Brescianini (15) - Atalanta</li>
-          <li>Guendouzi (11) - Lazio</li>
-          <li>Hernani (13) - Parma</li>
-        </ul>
+  <main class="content">
+    <h2>Rose delle squadre</h2>
+    <div class="table-rose">
+      <!-- Squadra 1 -->
+      <div class="team-card">
+        <h3>Real Raffaele</h3>
+        <img src="img/realraffaele_logo.png" alt="Logo Real Raffaele" class="team-logo"/>
+        <div class="team-section">
+          <strong>PORTIERI</strong>
+          <ul>
+            <li>Maignan (€35)</li>
+            <li>Radu I. (€1)</li>
+            <li>Vasquez D. (€1)</li>
+          </ul>
+        </div>
+        <div class="team-section">
+          <strong>DIFENSORI</strong>
+          <ul>
+            <li>Delprato (€4)</li>
+            <li>Hernandez T. (€33)</li>
+            <li>Kamara H. (€2)</li>
+            <li>Marusic (€1)</li>
+          </ul>
+        </div>
+        <div class="team-section">
+          <strong>CENTROCAMPISTI</strong>
+          <ul>
+            <li>--</li>
+          </ul>
+        </div>
+        <div class="team-section">
+          <strong>ATTACCANTI</strong>
+          <ul>
+            <li>--</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Spazio per altre 7 squadre (da copiare e modificare) -->
+      <div class="team-card">
+        <h3>Nome Squadra 2</h3>
+        <img src="img/logo2.png" alt="Logo Squadra 2" class="team-logo"/>
+        <div class="team-section">
+          <strong>PORTIERI</strong>
+          <ul>
+            <li>--</li>
+          </ul>
+        </div>
+        <div class="team-section">
+          <strong>DIFENSORI</strong>
+          <ul>
+            <li>--</li>
+          </ul>
+        </div>
+        <div class="team-section">
+          <strong>CENTROCAMPISTI</strong>
+          <ul>
+            <li>--</li>
+          </ul>
+        </div>
+        <div class="team-section">
+          <strong>ATTACCANTI</strong>
+          <ul>
+            <li>--</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Aggiungi qui le altre 6 squadre -->
     </div>
-  </div>
+  </main>
 </body>
 </html>
