@@ -1,113 +1,132 @@
-<!DOCTYPE html><html lang="it">
+<!DOCTYPE html>
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rose - FANTALOMBARDO</title>
+  <title>Rose | FANTALOMBARDO</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
+      background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+      color: #333;
     }
+
     .sidebar {
-      width: 200px;
-      background-color: #1f1f1f;
-      color: white;
-      height: 100vh;
       position: fixed;
       top: 0;
       left: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: #1e3a8a;
+      color: white;
       padding: 20px;
-      box-sizing: border-box;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.3);
     }
-    .sidebar h2 {
-      font-size: 22px;
-      margin-bottom: 30px;
-      color: #f8c100;
+
+    .sidebar h1 {
+      font-size: 20px;
       text-align: center;
+      margin: 0;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
     }
-    .main-content {
+
+    .content {
       margin-left: 200px;
       padding: 20px;
-      flex-grow: 1;
-      background: #f0f0f0;
-      min-height: 100vh;
     }
-    .team-box {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-      padding: 20px;
-      margin-bottom: 30px;
-      transform: perspective(800px) rotateX(2deg);
+
+    .rose-table {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      perspective: 1000px;
     }
-    .team-logo {
+
+    .squadra {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      transform: rotateX(3deg) rotateY(1deg);
+      transform-style: preserve-3d;
+    }
+
+    .squadra h2 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 18px;
+      color: #1e3a8a;
+    }
+
+    .squadra img {
+      display: block;
+      margin: 0 auto 10px auto;
       width: 60px;
       height: 60px;
-      object-fit: contain;
     }
-    .team-title {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 10px;
-    }
-    .team-title h3 {
-      margin: 0;
-      font-size: 24px;
-    }
-    ul {
+
+    .squadra ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
     }
-    ul li {
+
+    .squadra li {
       padding: 4px 0;
+      border-bottom: 1px solid #ddd;
     }
-    .role-title {
-      margin-top: 15px;
+
+    .squadra li:last-child {
+      border-bottom: none;
+    }
+
+    .ruolo {
       font-weight: bold;
-      color: #444;
+      margin-top: 10px;
+      color: #2563eb;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
-    <h2>FANTALOMBARDO</h2>
-    <div>🏆 Classifica</div>
-    <div>👥 Rose</div>
-    <!-- Aggiungi altri link se servono -->
-  </div>  <div class="main-content">
-    <div class="team-box">
-      <div class="team-title">
-        <img src="realraffaele_logo.png" alt="Logo Real Raffaele" class="team-logo">
-        <h3>Real Raffaele</h3>
-      </div><div class="role-title">PORTIERI</div>
-  <ul>
-    <li>Maignan (Milan) - 14</li>
-    <li>Radu I. (Venezia) - 8</li>
-    <li>Vasquez D. (Empoli) - 10</li>
-  </ul>
+    <h1>FANTALOMBARDO</h1>
+  </div>
 
-  <div class="role-title">DIFENSORI</div>
-  <ul>
-    <li>Delprato (Parma) - 12</li>
-    <li>Hernandez T. (Milan) - 13</li>
-    <li>Kamara H. (Udinese) - 9</li>
-    <li>Marusic (Lazio) - 11</li>
-    <li>Masina (Torino) - 8</li>
-    <li>Ruggeri (Atalanta) - 8</li>
-    <li>Spinazzola (Napoli) - 11</li>
-    <li>Tchatchoua (Verona) - 8</li>
-  </ul>
+  <div class="content">
+    <div class="rose-table">
+      <div class="squadra">
+        <h2>Real Raffaele</h2>
+        <img src="img/realraffaele-logo.png" alt="Logo Real Raffaele">
+        
+        <div class="ruolo">PORTIERI</div>
+        <ul>
+          <li>Maignan (14) - Milan</li>
+          <li>Radu I. (8) - Venezia</li>
+          <li>Vasquez D. (10) - Empoli</li>
+        </ul>
 
-  <div class="role-title">CENTROCAMPISTI</div>
-  <ul>
-    <li>Brescianini (Atalanta) - 15</li>
-    <li>Guendouzi (Lazio) - 11</li>
-    <li>Hernani (Parma) - 13</li>
-  </ul>
-</div>
+        <div class="ruolo">DIFENSORI</div>
+        <ul>
+          <li>Delprato (12) - Parma</li>
+          <li>Hernandez T. (13) - Milan</li>
+          <li>Kamara H. (9) - Udinese</li>
+          <li>Marusic (11) - Lazio</li>
+          <li>Masina (8) - Torino</li>
+          <li>Ruggeri (8) - Atalanta</li>
+          <li>Spinazzola (11) - Napoli</li>
+          <li>Tchatchoua (8) - Verona</li>
+        </ul>
 
+        <div class="ruolo">CENTROCAMPISTI</div>
+        <ul>
+          <li>Brescianini (15) - Atalanta</li>
+          <li>Guendouzi (11) - Lazio</li>
+          <li>Hernani (13) - Parma</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>
