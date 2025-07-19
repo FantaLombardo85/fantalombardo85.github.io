@@ -52,7 +52,25 @@
     }
 
     .team-section li {
-      margin-bottom: 3px;
+      margin-bottom: 5px;
+    }
+
+    .player-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .player-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .player-info img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
     }
   </style>
 </head>
@@ -75,72 +93,91 @@
   <main class="content">
     <h2>Rose delle squadre</h2>
     <div class="table-rose">
-      <!-- Squadra 1 -->
+      <!-- Squadra 1: RealRaffaele -->
       <div class="team-card">
         <h3>RealRaffaele</h3>
-        <img src="logo_realraffaele.png" alt="Logo Real Raffaele" class="team-logo"/>
+        <img src="img/logo_realraffaele.png" alt="Logo Real Raffaele" class="team-logo"/>
+        
         <div class="team-section">
           <strong>PORTIERI</strong>
           <ul>
-            <li>Maignan (€35)</li>
-            <li>Radu I. (€1)</li>
-            <li>Vasquez D. (€1)</li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/milan.png" alt="Milan"/> Maignan
+              </span>
+              <span>€35</span>
+            </li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/bari.png" alt="Bari"/> Radu I.
+              </span>
+              <span>€1</span>
+            </li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/parma.png" alt="Parma"/> Vasquez D.
+              </span>
+              <span>€1</span>
+            </li>
           </ul>
         </div>
+
         <div class="team-section">
           <strong>DIFENSORI</strong>
           <ul>
-            <li>Delprato (€4)</li>
-            <li>Hernandez T. (€33)</li>
-            <li>Kamara H. (€2)</li>
-            <li>Marusic (€1)</li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/parma.png" alt="Parma"/> Delprato
+              </span>
+              <span>€4</span>
+            </li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/milan.png" alt="Milan"/> Hernandez T.
+              </span>
+              <span>€33</span>
+            </li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/roma.png" alt="Roma"/> Kamara H.
+              </span>
+              <span>€2</span>
+            </li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/lazio.png" alt="Lazio"/> Marusic
+              </span>
+              <span>€1</span>
+            </li>
           </ul>
         </div>
+
         <div class="team-section">
           <strong>CENTROCAMPISTI</strong>
           <ul>
-            <li>--</li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/empty.png" alt="ND"/> --
+              </span>
+              <span>--</span>
+            </li>
           </ul>
         </div>
+
         <div class="team-section">
           <strong>ATTACCANTI</strong>
           <ul>
-            <li>--</li>
+            <li class="player-row">
+              <span class="player-info">
+                <img src="img/club/empty.png" alt="ND"/> --
+              </span>
+              <span>--</span>
+            </li>
           </ul>
         </div>
       </div>
 
-      <!-- Spazio per altre 7 squadre (da copiare e modificare) -->
-      <div class="team-card">
-        <h3>Nome Squadra 2</h3>
-        <img src="img/logo2.png" alt="Logo Squadra 2" class="team-logo"/>
-        <div class="team-section">
-          <strong>PORTIERI</strong>
-          <ul>
-            <li>--</li>
-          </ul>
-        </div>
-        <div class="team-section">
-          <strong>DIFENSORI</strong>
-          <ul>
-            <li>--</li>
-          </ul>
-        </div>
-        <div class="team-section">
-          <strong>CENTROCAMPISTI</strong>
-          <ul>
-            <li>--</li>
-          </ul>
-        </div>
-        <div class="team-section">
-          <strong>ATTACCANTI</strong>
-          <ul>
-            <li>--</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Aggiungi qui le altre 6 squadre -->
+      <!-- Altre squadre vanno qui (puoi copiare il blocco sopra e modificare) -->
     </div>
   </main>
 </body>
